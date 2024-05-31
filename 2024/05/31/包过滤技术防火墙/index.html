@@ -1,0 +1,250 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>包过滤技术防火墙 | LYC的妙妙屋</title><meta name="author" content="刘一晨"><meta name="copyright" content="刘一晨"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="在于利用路由器监视并过滤网络上流入流出的IP数据包，并拒绝发送可疑的包。由于Internet（因特网&#x2F;公网） 与Intranet（内部网&#x2F;内网） 的连接，多数都要使用路由器，所以路由器成为内外通信的必经端口。路由器的厂商在路由器上加入IP过滤功能，因此，过滤路由器也可以称作“包过滤路由器”或“筛选路由器”。 防火墙常常就是这样一个具备“包过滤功能”的简单路由器。具备“包过滤功能">
+<meta property="og:type" content="article">
+<meta property="og:title" content="包过滤技术防火墙">
+<meta property="og:url" content="http://example.com/2024/05/31/%E5%8C%85%E8%BF%87%E6%BB%A4%E6%8A%80%E6%9C%AF%E9%98%B2%E7%81%AB%E5%A2%99/index.html">
+<meta property="og:site_name" content="LYC的妙妙屋">
+<meta property="og:description" content="在于利用路由器监视并过滤网络上流入流出的IP数据包，并拒绝发送可疑的包。由于Internet（因特网&#x2F;公网） 与Intranet（内部网&#x2F;内网） 的连接，多数都要使用路由器，所以路由器成为内外通信的必经端口。路由器的厂商在路由器上加入IP过滤功能，因此，过滤路由器也可以称作“包过滤路由器”或“筛选路由器”。 防火墙常常就是这样一个具备“包过滤功能”的简单路由器。具备“包过滤功能">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/1.jpg">
+<meta property="article:published_time" content="2024-05-31T13:10:41.783Z">
+<meta property="article:modified_time" content="2024-05-31T13:13:03.835Z">
+<meta property="article:author" content="刘一晨">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/1.jpg"><link rel="shortcut icon" href="/img/1.jpg"><link rel="canonical" href="http://example.com/2024/05/31/%E5%8C%85%E8%BF%87%E6%BB%A4%E6%8A%80%E6%9C%AF%E9%98%B2%E7%81%AB%E5%A2%99/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '包过滤技术防火墙',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-05-31 21:13:03'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/background.css"><meta name="generator" content="Hexo 7.2.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/1.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 影视</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于笔者</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/upload/33.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="LYC的妙妙屋"><span class="site-name">LYC的妙妙屋</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 影视</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于笔者</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">包过滤技术防火墙</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-05-31T13:10:41.783Z" title="发表于 2024-05-31 21:10:41">2024-05-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-05-31T13:13:03.835Z" title="更新于 2024-05-31 21:13:03">2024-05-31</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="包过滤技术防火墙"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>在于利用路由器监视并过滤网络上流入流出的IP数据包，并拒绝发送可疑的包。由于Internet（因特网&#x2F;公网） 与Intranet（内部网&#x2F;内网） 的连接，多数都要使用路由器，所以路由器成为内外通信的必经端口。路由器的厂商在路由器上加入IP过滤功能，因此，过滤路由器也可以称作“包过滤路由器”或“筛选路由器”。</p>
+<p>防火墙常常就是这样一个具备“包过滤功能”的简单路由器。具备“包过滤功能”的防火墙，应该是足够安全的，但前提是要配置合理。然而一个包过滤规则是否完全严密及必要，则是很难判定的。因而在安全要求较高的场合，通常还配合使用其它的技术来加强网络的安全性。</p>
+<p>包过滤技术，是指网络设备（路由器或防火墙）根据“包过滤规则”检查所接收的每个数据包，做出允许数据包通过或丢弃数据包的决定。<a target="_blank" rel="noopener" href="https://img-blog.csdnimg.cn/direct/6df1da2ab9644a50bbba33c351cf4dad.png">https://img-blog.csdnimg.cn/direct/6df1da2ab9644a50bbba33c351cf4dad.png</a></p>
+<p>包过滤是在IP层实现的防火墙技术，包过滤根据包的IP地址，目的地址，源端口，目的端口及传递方向等包头信息判断是否允许包通过  </p>
+<p>包过滤的控制依据是规则集</p>
+<p>典型的过滤规则由规则号，匹配条件，匹配操作，三部分组成。该规则的作用在于只允许内，外网的邮件通信，其他的通信都禁止</p>
+<p>包过滤防火墙技术的优点</p>
+<p>1.低负载</p>
+<p>2.高通过率</p>
+<p>3.对用户透明：即用户不需要用户名和密码就可以登录。</p>
+<p>缺点</p>
+<p>不能在用户级别进行过滤：如不能识别不同的用户和防止IP的盗用。如果攻击者把自己的IP地址设成一个合法主机的IP地址，就可以轻易通过包过滤器。</p>
+<p>包过滤防火墙的使用领域有哪些？<br>具有数据包过滤功能的防火墙用于许多需要考虑网络安全的情况。 以下是具有数据包过滤功能的防火墙的一些典型应用：</p>
+<p>周边安全：数据包过滤防火墙通常用于网络外围，以保护内部网络免受未经授权的访问和外部威胁。 通过根据预定规则过滤和调节传入和传出的网络流量，它们充当安全的第一道防线。<br>互联网服务提供商 (ISP)：为了保护其网络并管理通过其基础设施的流量，ISP 经常使用数据包过滤防火墙。 这些防火墙强制执行网络使用准则，过滤不需要或有害的流量，并帮助防止网络攻击。<br>小型企业网络：由于其经济实惠且易于使用，包过滤防火墙经常用于小型企业网络。 通过根据预定规则过滤数据包，它们提供了基本的网络安全级别，有助于防止非法访问尝试。<br>用于远程访问的 VPN：虚拟专用网络 (VPN) 通过使用数据包过滤防火墙来保护远程访问连接。 当数据包进入和离开 VPN 隧道时，防火墙会对其进行过滤和检查，以确保只允许授权的流量通过，并禁止未经授权的访问尝试。<br>家庭网络：为了保护家庭网络免受外部危险，许多路由器都具有数据包过滤防火墙功能。 这些防火墙支持连接到家庭网络的设备的基本网络安全，并有助于防止未经授权的网络访问。<br>公共 Wi-Fi 网络：为了保护用户的设备和保证网络安全，公共Wi-Fi网络（例如咖啡厅、机场或酒店的Wi-Fi网络）经常使用包过滤防火墙。 这些防火墙通过过滤有害流量和执行网络使用准则来帮助保持安全可靠的网络环境。<br>云基础设施安全：为了保护其基础设施并保护虚拟机和云资源，云服务提供商经常使用数据包过滤防火墙。 这些防火墙通过监控和管理进出云环境的流量来帮助实施安全程序并防止不必要的访问。<br>网络分段：为了隔离和防御各个网段或子网，网络分段方案中使用包过滤防火墙。 这些防火墙通过过滤网段之间的流量来提高网络安全性并减少潜在安全漏洞的影响。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">刘一晨</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2024/05/31/%E5%8C%85%E8%BF%87%E6%BB%A4%E6%8A%80%E6%9C%AF%E9%98%B2%E7%81%AB%E5%A2%99/">http://example.com/2024/05/31/包过滤技术防火墙/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">LYC的妙妙屋</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/1.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/05/31/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%AE%A1%E8%AE%A1-1/" title="网络安全审计"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">网络安全审计</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div class="comment-switch"><span class="first-comment">Valine</span><span id="switch-btn"></span><span class="second-comment">Disqus</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/1.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">刘一晨</div><div class="author-info__description">晴天</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:937749662@qq.com" target="_blank" title="Email"><i class="fas fa-envelope-open-text"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/05/31/%E5%8C%85%E8%BF%87%E6%BB%A4%E6%8A%80%E6%9C%AF%E9%98%B2%E7%81%AB%E5%A2%99/" title="包过滤技术防火墙">包过滤技术防火墙</a><time datetime="2024-05-31T13:10:41.783Z" title="发表于 2024-05-31 21:10:41">2024-05-31</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/05/31/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%AE%A1%E8%AE%A1-1/" title="网络安全审计">网络安全审计</a><time datetime="2024-05-31T13:08:22.399Z" title="发表于 2024-05-31 21:08:22">2024-05-31</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/26/%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81/" title="各类恶意攻击">各类恶意攻击</a><time datetime="2024-04-26T10:09:40.996Z" title="发表于 2024-04-26 18:09:40">2024-04-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/24/hello-world/" title="Hello World">Hello World</a><time datetime="2024-04-24T00:23:36.774Z" title="发表于 2024-04-24 08:23:36">2024-04-24</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 By 刘一晨</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><img src="https://haiyong.site/img/icp.png"><a href="https://beian.miit.gov.cn/#/Integrated/index" style="color:black" target="_blank">冀ICP备2024068814号-1</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const initValine = () => {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: '',
+      appKey: '',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  const loadValine = async () => {
+    if (typeof Valine === 'function') initValine()
+    else {
+      await getScript('https://cdn.jsdelivr.net/npm/valine@1.5.1/dist/Valine.min.js')
+      initValine()
+    }
+  }
+
+  if ('Valine' === 'Valine' || !false) {
+    if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+    else setTimeout(loadValine, 0)
+  } else {
+    window.loadOtherComment = loadValine
+  }
+})()</script><script>(() => {
+  const disqus_config = function () {
+    this.page.url = 'http://example.com/2024/05/31/%E5%8C%85%E8%BF%87%E6%BB%A4%E6%8A%80%E6%9C%AF%E9%98%B2%E7%81%AB%E5%A2%99/'
+    this.page.identifier = '/2024/05/31/%E5%8C%85%E8%BF%87%E6%BB%A4%E6%8A%80%E6%9C%AF%E9%98%B2%E7%81%AB%E5%A2%99/'
+    this.page.title = '包过滤技术防火墙'
+  }
+
+  const disqusReset = () => {
+    window.DISQUS && window.DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  btf.addGlobalFn('themeChange', disqusReset, 'disqus')
+
+  const loadDisqus = () =>{
+    if (window.DISQUS) disqusReset()
+    else {
+      const script = document.createElement('script')
+      script.src = 'https://.disqus.com/embed.js'
+      script.setAttribute('data-timestamp', +new Date())
+      document.head.appendChild(script)
+    }
+  }
+
+  const getCount = async() => {
+    try {
+      const eleGroup = document.querySelector('#post-meta .disqus-comment-count')
+      if (!eleGroup) return
+      const cleanedLinks = eleGroup.href.replace(/#post-comment$/, '')
+
+      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=&api_key=&thread:link=${cleanedLinks}`,{
+        method: 'GET'
+      })
+      const result = await res.json()
+
+      const count = result.response.length ? result.response[0].posts : 0
+      eleGroup.textContent = count
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  if ('Valine' === 'Disqus' || !false) {
+    if (false) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+    else {
+      loadDisqus()
+      
+    }
+  } else {
+    window.loadOtherComment = loadDisqus
+  }
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
