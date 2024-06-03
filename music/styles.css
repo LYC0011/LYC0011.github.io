@@ -1,12 +1,11 @@
 body {  
     font-family: Arial, sans-serif;  
-    background-color: #b68181de;  
     margin: 0;  
     padding: 0;  
 }  
   
 header {  
-    background-color: #f5f1f1;  
+    background-color: #c27474;  
     color: #fff;  
     padding: 20px;  
     text-align: center;  
@@ -22,30 +21,19 @@ main {
   
 .romantic-text {  
     text-align: center;  
-    color: #f5f0f0;  
 }  
   
-.romantic-text h2 {  
-    color: #f00; /* 设置为红色以表达爱意 */  
-    margin-top: 20px;  
-}  
-  
-.heart-image {  
-    text-align: center;  
-    margin-top: 30px;  
-}  
-  
-.heart-image img {  
-    width: 300px; /* 根据图片大小调整 */  
-    height: auto;  
+#days-together {  
+    font-size: 2em;  
+    margin-top: 10px;  
 }  
   
 footer {  
-    background-color: #b9b7b7;  
+    background-color: #c06262;  
     color: #fff;  
     padding: 10px;  
     text-align: center;  
     position: fixed;  
     bottom: 0;  
-    width: 50%;  
+    width: 100%;  
 }
