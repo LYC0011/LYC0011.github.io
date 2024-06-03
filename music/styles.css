@@ -5,8 +5,8 @@ body {
 }  
   
 header {  
-    background-color: #c27474;  
-    color: #fff;  
+    background-color: #f5c2c2;  
+    color: #414040;  
     padding: 20px;  
     text-align: center;  
 }  
@@ -24,7 +24,7 @@ main {
 }  
   
 #days-together {  
-    font-size: 2em;  
+    font-size: 5em;  
     margin-top: 10px;  
 }  
   
